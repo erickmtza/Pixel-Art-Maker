@@ -1,0 +1,109 @@
+.unselectable {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}  
+/*
+#eraser {
+  color: #ffffff;
+  border: solid black 3px
+}
+
+#instructions {
+  position: relative;
+  transform: translate(350px,0);
+  text-align:  left;
+}
+*/
+
+.main {
+display:flex
+}
+
+.one, .three {
+  width: 15%; 
+  height: 100%;
+}
+.two {
+  padding: 10px;
+  width: 70%;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.90);
+  }
+
+body {
+background-image: url("https://orig00.deviantart.net/f196/f/2012/129/0/6/gir_pixel_art_by_cb987654-d4z4jaw.png");
+background-repeat: repeat;
+background-size: 100%;
+color: #557fe8;
+font-family: 'Lato', sans-serif;
+text-align: center;
+}
+.interface{
+  border-radius: 5px;
+  border-style: solid ;
+  border-color: #557fe8;
+}
+.interface:hover{
+  border-color: blue;
+}
+
+#submitbutton, #saveimg {
+border-radius: 5px;
+border-style: solid ;
+border-color: #557fe8;
+width: 100px;
+height: 25px;
+font-weight: bold;
+color: #ffffff;
+background-color: #557fe8;
+}
+#colorPicker{
+  cursor: pointer;
+}
+#submitbutton:hover, #clearbutton:hover, #saveimg:hover {
+  border-color: blue;
+  cursor: pointer;
+  background-color: blue;
+}
+h1 {
+  background: -webkit-linear-gradient(#8042f4, #557fe8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+;
+  font-family: 'VT323', monospace;
+   font-size: 70px;
+   margin: 0.2em;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+#table {
+  background-color: #ffffff;
+}
+
+table {
+  
+   border: 1px solid black;
+   border-collapse: collapse;
+   margin: 0 auto;
+}
+
+
+input[type=number] {
+    width: 6em;
+}

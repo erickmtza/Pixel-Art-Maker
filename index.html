@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pixel Art Maker!</title>
+  
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+  
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js">
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
+  
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+  
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
+</head>
+<body>
+  <div class="main">
+  <div class="one">
+  </div>
+  <div class="two" >
+  <p>Created by <a href="https://www.behance.net/vasudevapitta" target="_blank">Vasudeva Pitta</a></p>
+  <h1 class="unselectable">Pitta's Pixel Art Maker</h1>
+  <h2 class="unselectable">Choose Grid Size</h2>
+  <form id="sizePicker" class="unselectable">
+  Grid Height:
+  <input type="number" class="interface" id="inputHeight" name="cols" min="1" value="40">
+  Grid Width:
+  <input type="number" class="interface" id="inputWeight" name="rows" min="1" value="40">
+  Grid Size:</b>
+  <input type="number" class="interface" id="pixelSize" name="pixelsize" min="1" value="10">
+  <input type="submit" id="submitbutton" value="SUBMIT"> 
+  Color: <input type="color" id="colorPicker">
+    <!--
+    Eraser: <i class="fas fa-square" id="eraser"></i> -->
+  </form>
+  <h2 class="unselectable"><h2>Instructions</h2>
+    <div id="instructions">
+  <p><b>1. Set Grid Height, Width, Size and Click Submit </p>
+  <p>2.Pick a Color and Click or Click & Drag to Draw </p> <p> 3.Double Click on Grid to Erase </p> <p>4.Click <span> <input type="button" id="saveimg" value="SAVE IMAGE"></span></p>
+    </div>
+    <div id="table">
+    <table id="pixelCanvas"></table>
+    </div>
+      </div>
+     <div class="three">
+    </div>
+  </div>
+</body>
+</html>
