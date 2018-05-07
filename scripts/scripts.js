@@ -66,7 +66,8 @@ function makeGrid(cols, rows) {
   $("#table").css(maxWidth, padWidth);
   $("#table").css(height, padHeight); 
   });
-  
+ 
+ // To download the art as a PDF //  
   $("#saveimg").click(function(){
         html2canvas($("#pixelCanvas"), {
             onrendered: function(canvas) {         
@@ -78,16 +79,4 @@ function makeGrid(cols, rows) {
             }
         });
   });
-    
-$('#saveimg').click(function () {
-    html2canvas($(pixelCanvas), {
-        onrendered: function (canvas) {
-            let imgData = canvas.toDataURL(
-                'image/png');
-            let doc = new jsPDF('p', 'mm');
-            doc.addImage(imgData, 'PNG', 10, 10);
-            doc.save('sample-file.pdf');
-        }
-    });
-});
 });
